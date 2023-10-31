@@ -1,0 +1,10 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:69:9:ISOUDS_Get_SA_NO_OF_SUP_LEVLS	1
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:85:10:ISOUDS_Get_SASESSIONTIMERMAX	1
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:102:16:GetSeedLevel1	2
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:129:16:GenerateKeyLevel1	3
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:166:16:GetSeedLevel3	2
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:193:16:GenerateKeyLevel3	3
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:230:16:GetSeedLevel5	2
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:257:16:GenerateKeyLevel5	3
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:293:16:GetSeedLevel7	2
+../Core/Inc/ISOUDS_Server/ISOUDS_SA/ISOUDS_SA_Cfg.c:320:16:GenerateKeyLevel7	3

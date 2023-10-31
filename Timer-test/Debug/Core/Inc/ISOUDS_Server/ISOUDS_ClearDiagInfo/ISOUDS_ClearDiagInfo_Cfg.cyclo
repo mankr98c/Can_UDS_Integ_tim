@@ -1,0 +1,3 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_ClearDiagInfo/ISOUDS_ClearDiagInfo_Cfg.c:48:9:ISOUDS_ClearDTCInfoPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ClearDiagInfo/ISOUDS_ClearDiagInfo_Cfg.c:66:9:ISOUDS_CLearDTCInfoReq	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ClearDiagInfo/ISOUDS_ClearDiagInfo_Cfg.c:91:9:ISOUDS_CLearDTCInfoReqStat	1

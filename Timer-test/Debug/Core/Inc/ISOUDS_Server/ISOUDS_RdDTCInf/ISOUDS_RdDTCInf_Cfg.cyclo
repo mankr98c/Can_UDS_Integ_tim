@@ -1,0 +1,5 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_RdDTCInf/ISOUDS_RdDTCInf_Cfg.c:87:9:ISOUDS_RdDTCPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_RdDTCInf/ISOUDS_RdDTCInf_Cfg.c:108:16:ISOUDS_RdTDCInf_reportNumberOfDTCByStatusMask	2
+../Core/Inc/ISOUDS_Server/ISOUDS_RdDTCInf/ISOUDS_RdDTCInf_Cfg.c:159:16:ISOUDS_RdTDCInf_reportDTCByStatusMask	2
+../Core/Inc/ISOUDS_Server/ISOUDS_RdDTCInf/ISOUDS_RdDTCInf_Cfg.c:193:16:ISOUDS_RdTDCInf_reportDTCSnpshotRecordByDTCNumber	2
+../Core/Inc/ISOUDS_Server/ISOUDS_RdDTCInf/ISOUDS_RdDTCInf_Cfg.c:237:16:ISOUDS_RdTDCInf_reportSupportedDTC	1

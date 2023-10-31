@@ -1,0 +1,8 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:49:9:HAL_HardReset_Cond	4
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:76:9:HAL_KeyOffOnReset_Cond	4
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:102:9:HAL_SoftReset_Cond	4
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:127:9:HAL_EnablRpdPwrSD_Cond	4
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:152:9:HAL_HardReset_Proc	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:169:9:HAL_KeyOffOnReset_Proc	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:186:9:HAL_SoftReset_Proc	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_HAL.c:203:9:HAL_EnablRpdPwrSD_Proc	1

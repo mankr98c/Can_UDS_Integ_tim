@@ -1,0 +1,12 @@
+../Core/Inc/FCM/Fcm_cfg.c:403:6:FCM_Init_DTC_Info	3
+../Core/Inc/FCM/Fcm_cfg.c:463:6:FCM_FirstFailedDTCIndication	1
+../Core/Inc/FCM/Fcm_cfg.c:479:6:FCM_ConfirmedDTCIndication	5
+../Core/Inc/FCM/Fcm_cfg.c:534:9:FCM_GetDTCSnpShotRecdByDTCnum	6
+../Core/Inc/FCM/Fcm_cfg.c:625:9:FCM_ClearRequestdDTCInfo	3
+../Core/Inc/FCM/Fcm_cfg.c:688:6:FCM_GetDTCFaultDetCounter	4
+../Core/Inc/FCM/Fcm_cfg.c:730:6:FCM_GetPermanentStatus	5
+../Core/Inc/FCM/Fcm_cfg.c:775:9:FCM_CheckControlDTCCNCcndtns	1
+../Core/Inc/FCM/Fcm_cfg.c:798:9:FCM_CheckControlDTCROORcndtns	1
+../Core/Inc/FCM/Fcm_cfg.c:820:6:FCM_DTC_FailedIndication	5
+../Core/Inc/FCM/Fcm_cfg.c:867:6:FCM_DTC_WriteDTCToEEPROM	1
+../Core/Inc/FCM/Fcm_cfg.c:875:17:get_snapshot_by_DID	1

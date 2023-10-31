@@ -1,0 +1,4 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_Cfg.c:88:9:ISOUDS_Get_ECURSTMaxSubFun	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_Cfg.c:104:16:ISOUDS_HardReset_Cbk	2
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_Cfg.c:142:16:ISOUDS_KeyOffOnReset_Cbk	2
+../Core/Inc/ISOUDS_Server/ISOUDS_ECUReset/ISOUDS_ECUReset_Cfg.c:177:16:ISOUDS_SoftReset_Cbk	2

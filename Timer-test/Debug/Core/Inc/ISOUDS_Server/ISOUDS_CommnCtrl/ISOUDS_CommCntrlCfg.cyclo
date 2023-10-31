@@ -1,0 +1,7 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:90:9:ISOUDS_Get_ComContMaxSubFun	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:105:9:ISOUDS_CommTypeSupp	2
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:134:9:ISOUDS_CommCntlPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:157:16:ISOUDS_EnblRxTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:183:16:ISOUDS_EnblRxDisableTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:209:16:ISOUDS_DisbleRxEnblTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrlCfg.c:235:16:ISOUDS_DisablRxTx	1

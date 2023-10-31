@@ -1,0 +1,5 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrl_HAL.c:49:9:HAL_CommCntlPreCondCheck	4
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrl_HAL.c:76:9:HAL_EnblRxTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrl_HAL.c:100:9:HAL_EnblRxDisableTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrl_HAL.c:123:9:HAL_DisbleRxEnblTx	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CommnCtrl/ISOUDS_CommCntrl_HAL.c:148:9:HAL_DisablRxTx	1

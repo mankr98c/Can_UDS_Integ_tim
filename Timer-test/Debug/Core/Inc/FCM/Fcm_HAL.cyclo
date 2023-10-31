@@ -1,0 +1,7 @@
+../Core/Inc/FCM/Fcm_HAL.c:57:9:HAL_FCM_InitStatus	1
+../Core/Inc/FCM/Fcm_HAL.c:72:9:HAL_FCM_ReadDTCInfo	1
+../Core/Inc/FCM/Fcm_HAL.c:123:6:HAL_FCM_WriteDTCInfo	1
+../Core/Inc/FCM/Fcm_HAL.c:167:6:HAL_FCM_Read_Snapst_Data	2
+../Core/Inc/FCM/Fcm_HAL.c:202:6:HAL_FCM_ClearReqDTCUpdate	3
+../Core/Inc/FCM/Fcm_HAL.c:243:6:HAL_FCM_DTC_StatusChange	1
+../Core/Inc/FCM/Fcm_HAL.c:257:6:HAL_FCM_ClearAllDTC	3

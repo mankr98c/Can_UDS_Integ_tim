@@ -1,0 +1,12 @@
+../Core/Inc/ISOTP/CanTp_Cfg.c:74:15:ISOTP_CheckReqType	5
+../Core/Inc/ISOTP/CanTp_Cfg.c:107:9:ISOTP_CheckRxMesgID	5
+../Core/Inc/ISOTP/CanTp_Cfg.c:133:9:ISOTP_CheckTxMesgID	3
+../Core/Inc/ISOTP/CanTp_Cfg.c:158:6:ISOTP_SetRxPhysReqID	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:177:6:ISOTP_SetRxFuncReqID	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:196:6:ISOTP_SetTxmesgMesgID	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:213:10:ISOTP_GetSchedPeriod	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:230:10:ISOTP_GetFCSTMIN	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:247:9:ISOTP_GetPADVal	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:264:9:ISOTP_GetFCBS	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:281:10:ISOTP_GetBUFFSIZE	1
+../Core/Inc/ISOTP/CanTp_Cfg.c:298:9:ISOTP_STPadding	1

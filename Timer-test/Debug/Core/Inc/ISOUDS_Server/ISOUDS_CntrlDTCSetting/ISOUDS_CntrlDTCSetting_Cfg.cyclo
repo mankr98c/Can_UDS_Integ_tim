@@ -1,0 +1,4 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_CntrlDTCSetting/ISOUDS_CntrlDTCSetting_Cfg.c:73:9:ISOUDS_Get_CntrlDTCSetMaxSubFun	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CntrlDTCSetting/ISOUDS_CntrlDTCSetting_Cfg.c:88:9:ISOUDS_CntrlDTCSetngPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CntrlDTCSetting/ISOUDS_CntrlDTCSetting_Cfg.c:111:16:ISOUDS_CntrDTCSet_ON_Cbk	1
+../Core/Inc/ISOUDS_Server/ISOUDS_CntrlDTCSetting/ISOUDS_CntrlDTCSetting_Cfg.c:135:16:ISOUDS_CntrDTCSet_OFF_Cbk	1

@@ -1,0 +1,8 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:53:9:ISOUDS_ReqFTReadFile	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:68:9:ISOUDS_ReqFTAddFile	2
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:104:9:ISOUDS_ReqFTDelFile	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:117:9:ISOUDS_ReqFTReplaceFile	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:139:9:ISOUDS_ReqFTReadDir	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:156:9:ISOUDS_GetReqFileLenStat	2
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:181:6:ISOUDS_ReqFileLen	1
+../Core/Inc/ISOUDS_Server/ISOUDS_ReqFileTransfer/ISOUDS_ReqFileTransferCfg.c:189:9:ISOUDS_GetReqFileAddStat	1

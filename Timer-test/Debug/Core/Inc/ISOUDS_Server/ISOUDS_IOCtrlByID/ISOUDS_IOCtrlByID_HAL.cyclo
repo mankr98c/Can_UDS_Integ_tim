@@ -1,0 +1,5 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_HAL.c:63:9:HAL_IOCntrlPreCondCheck	4
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_HAL.c:90:9:HAL_IOctrlTestRtn	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_HAL.c:114:9:HAL_IOctrlFrtHeatPwr	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_HAL.c:138:9:HAL_IOctrlRearHeatPwr	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_HAL.c:162:9:HAL_IOctrlFrtVentPwr	1

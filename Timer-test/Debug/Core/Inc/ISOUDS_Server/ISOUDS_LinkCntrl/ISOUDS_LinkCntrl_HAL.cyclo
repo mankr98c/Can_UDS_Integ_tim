@@ -1,0 +1,4 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_LinkCntrl/ISOUDS_LinkCntrl_HAL.c:51:9:HAL_LinkCntlPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_LinkCntrl/ISOUDS_LinkCntrl_HAL.c:70:9:HAL_LinkCntrl_VMTWFP	1
+../Core/Inc/ISOUDS_Server/ISOUDS_LinkCntrl/ISOUDS_LinkCntrl_HAL.c:92:9:HAL_LinkCntrl_VMTWSP	1
+../Core/Inc/ISOUDS_Server/ISOUDS_LinkCntrl/ISOUDS_LinkCntrl_HAL.c:114:9:HAL_LinkCntrl_TM	1

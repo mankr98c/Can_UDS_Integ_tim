@@ -1,0 +1,6 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:96:10:ISOUDS_Get_RtnContrlMaxSubFun	1
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:111:9:ISOUDS_RtnControlTypeSuppChk	4
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:141:9:ISOUDS_RtnCntrlPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:163:16:ISOUDS_RtnCheckMemory	1
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:189:16:ISOUDS_RtnEraseMemory	1
+../Core/Inc/ISOUDS_Server/ISOUDS_RtnCntrl/ISOUDS_RtnCntrl_Cfg.c:215:16:ISOUDS_RtnCheckProgDependcies	1

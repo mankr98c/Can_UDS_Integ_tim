@@ -1,0 +1,7 @@
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:101:9:ISOUDS_Get_IOContrlMaxSubFun	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:115:9:ISOUDS_IOControlParameterSupp	4
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:150:9:ISOUDS_IOCntrlPreCondCheck	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:173:16:ISOUDS_IOctrlTestRtn	1
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:198:16:ISOUDS_IOctrlFrtHeatPwr	5
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:237:16:ISOUDS_IOctrlRearHeatPwr	5
+../Core/Inc/ISOUDS_Server/ISOUDS_IOCtrlByID/ISOUDS_IOCtrlByID_Cfg.c:276:16:ISOUDS_IOctrlFrtVentPwr	5

@@ -1,0 +1,6 @@
+../Core/Inc/ISOTP/CanTp_HAL.c:46:6:ISOTP_HAL_MsgIndi	1
+../Core/Inc/ISOTP/CanTp_HAL.c:65:6:ISOTP_HAL_FFIndi	1
+../Core/Inc/ISOTP/CanTp_HAL.c:79:6:ISOTP_HAL_TxCnfCbk	1
+../Core/Inc/ISOTP/CanTp_HAL.c:96:6:ISOTP_HAL_Reset	1
+../Core/Inc/ISOTP/CanTp_HAL.c:112:6:ISOTP_HAL_TimeoutInd	1
+../Core/Inc/ISOTP/CanTp_HAL.c:128:6:ISOTP_HAL_CANMesgTxnReq_Stub	2
