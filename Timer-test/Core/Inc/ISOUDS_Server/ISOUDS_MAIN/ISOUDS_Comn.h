@@ -58,8 +58,7 @@
 												  Active Session */
 #define     ISOUDS_SNS             (0x11)      /* Service Not Supported */
 #define     ISOUDS_SFNS            (0x12)      /* Sub Function Not Supported */
-#define     ISOUDS_IMLOIF          (0x13)      /* Incorrect Message Length Or
-											      Invalid Format */
+#define     ISOUDS_IMLOIF          (0x13)      /* Incorrect Message Length Or Invalid Format */
 #define     ISOUDS_RTL	           (0x14)      /* Response too Long */
 
 #define		ISOUDS_AR			   (0x34)		/* Authentication Required */

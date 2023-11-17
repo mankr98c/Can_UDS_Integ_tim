@@ -49,7 +49,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   1U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL1},
@@ -60,10 +60,10 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   2U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
-	 {UnlockedL4},
+	 {UnlockedL1},
 	 &ISOUDS_ReqDwnldReqCbk,/* Function pointer to callback*/
 	 },
 	 {
@@ -71,7 +71,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   3U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -82,7 +82,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   4U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -93,7 +93,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   1U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -104,7 +104,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   2U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -115,7 +115,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   3U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -126,7 +126,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   4U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -137,7 +137,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   1U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -148,7 +148,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   2U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -159,7 +159,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   3U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -170,7 +170,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   4U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -181,7 +181,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   1U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -192,7 +192,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   2U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -203,7 +203,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   3U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -214,7 +214,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   4U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},
@@ -225,7 +225,7 @@ const ISOUDS_ReqDwnldType ISOUDS_ReqDwnldConfTab[ISOUDS_ReqDwnldMaxentries] =
 	   5U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL4},

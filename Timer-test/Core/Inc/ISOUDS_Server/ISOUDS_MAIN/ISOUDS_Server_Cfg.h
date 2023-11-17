@@ -59,7 +59,7 @@
 
 /************************** Declaration of global symbol and constants ********/
 /* The periodic scheduling interval of iso14229-1 */
-#define     ISOUDS_SERVER_PERIOD_SCHED    (10U)
+#define     ISOUDS_SERVER_PERIOD_SCHED    (5U)
 
 /* Timer Threshold before ECU is reset */
 #define     ISOUDS_TMRTHRES        (50U)
@@ -77,9 +77,9 @@
  /* Standard P2 limit = 150 ms for client*/
 #define     ISOUDS_CLIENT_STDP2LIM (20U)
 /* NRC 78 minimum limit = 4500 ms */
-#define     ISOUDS_NRC78P2MINLIM   (0U)
+#define     ISOUDS_NRC78P2MINLIM   (4500U)
 /* NRC 78 maximum limit = 5000 ms */
-#define     ISOUDS_NRC78P2MAXLIM   (2000U)
+#define     ISOUDS_NRC78P2MAXLIM   (4000U)
 /* NRC 78 maximum limit = 5100 ms for client*/
 #define     ISOUDS_CLIENT_NRC78P2MAXLIM (5000U)
 /* Timer S3 limit = 5000 ms */
@@ -104,6 +104,7 @@
 #define	  ISOUDS_CAN_SERVER_PHY_REQ_ID_TYPE		(uint8_t)(ISOUDS_STANDARD_ID)
 #define	  ISOUDS_CAN_SERVER_FNC_REQ_ID			(uint32_t)0x700
 #define	  ISOUDS_CAN_SERVER_FNC_REQ_ID_TYPE		(uint8_t)(ISOUDS_STANDARD_ID)
+
 
 #define ISOUDS_SECHD_TIME						(uint16_t)3U
 #define ISOUDS_PROG_KEY_MSG_TIMER_OFF			(uint16_t)0xFFFFU

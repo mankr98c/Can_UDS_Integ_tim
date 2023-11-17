@@ -146,6 +146,12 @@ uint8_t RDBI_EcuStatusMsgCbk(uint8_t buffer[], uint16_t len)
 uint8_t RDBI_SYMCPartNumCbk(uint8_t buffer[], uint16_t len)
 {
 	uint8_t RespVal = ISOUDS_POSRES;
+	uint8_t	part_number[10] = "12";
+		uint16_t idx;
+	for(idx = 0U; idx < len; idx++)
+			{
+				buffer[idx] = part_number[idx];
+			}
 #if 0
 	uint32_t StatusVal;
 	/* 10bytes ASCII, WARMER & VENT FRT : 87310-42000, WARMER & VENT : 87320-42000 */

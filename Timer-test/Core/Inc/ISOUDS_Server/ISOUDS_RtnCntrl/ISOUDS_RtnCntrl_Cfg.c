@@ -43,7 +43,7 @@ ISOUDS_RtnCntrlCfg_t ISOUDS_RtnCntrlCfg_Tbl[ISOUDS_RtnContrlMaxSubFun] ={
 																				12,
 																				ISOUDS_TRUE,
 																				1,
-	 																			{UnlockedL2},
+	 																			{UnlockedL1},
 																				&ISOUDS_RtnCheckMemory
 																			},
 																			{
@@ -54,7 +54,7 @@ ISOUDS_RtnCntrlCfg_t ISOUDS_RtnCntrlCfg_Tbl[ISOUDS_RtnContrlMaxSubFun] ={
 																				8,
 																				ISOUDS_TRUE,
 																				1,
-	 																			{UnlockedL2},
+	 																			{UnlockedL1},
 																				&ISOUDS_RtnEraseMemory
 																			},
 																			{
@@ -65,7 +65,7 @@ ISOUDS_RtnCntrlCfg_t ISOUDS_RtnCntrlCfg_Tbl[ISOUDS_RtnContrlMaxSubFun] ={
 																				8,
 																				ISOUDS_TRUE,
 																				1,
-	 																			{UnlockedL2},
+	 																			{UnlockedL1},
 																				&ISOUDS_RtnCheckProgDependcies
 																			}
 																		};

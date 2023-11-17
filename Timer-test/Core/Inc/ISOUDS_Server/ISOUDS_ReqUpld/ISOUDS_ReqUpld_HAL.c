@@ -28,12 +28,14 @@
 #include "ISOUDS_ReqUpld.h"
 #include "ISOUDS_ReqUpld_Cfg.h"
 #include "ISOUDS_ReqUpld_HAL.h"
+#include "main.h"
+#include "stm32h7xx_hal_flash.h"
 
 #if (ISOUDS_APP_CONFIG == ISOUDS_SERVER)
 /********************** Declaration of local symbol and constants *********************************/
 
 /********************************* Declaration of local macros ************************************/
-
+//volatile uint32_t* mappedAddress = 0x08000000;
 /********************************* Declaration of local types *************************************/
 
 /******************************* Declaration of local variables ***********************************/
@@ -65,6 +67,7 @@
 
 ** Remarks                  : None
 ***************************************************************************************************/
+
 uint8_t  ISOUDS_ReqUpldReqCbk (unsigned long RdAddress, unsigned long RdLength, uint8_t *RespBuff)
 {
     uint8_t retVal;
@@ -72,10 +75,11 @@ uint8_t  ISOUDS_ReqUpldReqCbk (unsigned long RdAddress, unsigned long RdLength, 
 	(void) RdLength;
 	(void) *RespBuff;
     /*User specific code*/
-    #if 0
-    *RespBuff =  0x00;
-    RdLength -= 0x01;
-    #endif
+
+
+    *RespBuff =  00;
+    RdLength = 256;
+
     retVal = (uint8_t)ISOUDS_POSRES;
     return retVal;
 

@@ -40,7 +40,7 @@ const ISOUDS_SA_Conf_t ISO_SA_Config[ISOUDS_SA_NO_OF_SUP_LEVLS] =
 		{(uint8_t)UnlockedL2, EXTENDED_SESS,8, 8, &GetSeedLevel3,&GenerateKeyLevel3},
 		{(uint8_t)UnlockedL4, EXTENDED_SESS,8, 8, &GetSeedLevel7,&GenerateKeyLevel7}
 #else
-		{(uint8_t)UnlockedL1, EXTENDED_SESS |PROGRAMMING_SESS ,8, 4, &GetSeedLevel1,&GenerateKeyLevel1},
+		{(uint8_t)UnlockedL1, EXTENDED_SESS |PROGRAMMING_SESS ,3, 3, &GetSeedLevel1,&GenerateKeyLevel1},
 		{(uint8_t)UnlockedL2, EXTENDED_SESS |PROGRAMMING_SESS ,8, 8, &GetSeedLevel3,&GenerateKeyLevel3},
 		{(uint8_t)UnlockedL3, EXTENDED_SESS |PROGRAMMING_SESS ,8, 4, &GetSeedLevel5,&GenerateKeyLevel5},
 		{(uint8_t)UnlockedL4, EXTENDED_SESS |PROGRAMMING_SESS ,8, 8, &GetSeedLevel7,&GenerateKeyLevel7}

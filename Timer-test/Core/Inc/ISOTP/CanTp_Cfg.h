@@ -35,7 +35,7 @@
 
 /************************** Declaration of global symbol and constants ****************************/
 /* The periodic scheduling interval of iso15765 in units of 0.1 ms */
-#define     ISOTP_PERIOD_SCHED      	(10U)
+#define     ISOTP_PERIOD_SCHED      	(5U)
 
 #define		ISOTP_NORMAL_ADD 			(0U)
 #define		ISOTP_NORMAL_FIXED_ADD		(1U)
@@ -73,14 +73,14 @@
 
 
 /* Sender timeout values */
-#define     ISOTP_NAS_TIMEOUT_MS      (30U)    /* N_As timeout value in ms */
-#define     ISOTP_NBS_TIMEOUT_MS      (90U)    /* N_Bs timeout value in ms */
-#define     ISOTP_NCS_TIMEOUT_MS      (150U)    /* N_Cs timeout value in ms */
+#define     ISOTP_NAS_TIMEOUT_MS      (900U)    /* N_As timeout value in ms */
+#define     ISOTP_NBS_TIMEOUT_MS      (900U)    /* N_Bs timeout value in ms */
+#define     ISOTP_NCS_TIMEOUT_MS      (900U)    /* N_Cs timeout value in ms */
 
 /* Receiver timeout values */
-#define     ISOTP_NAR_TIMEOUT_MS      (30U)    /* N_Ar timeout value in ms */
-#define     ISOTP_NBR_TIMEOUT_MS      (50U)    /* N_Br timeout value in ms */
-#define     ISOTP_NCR_TIMEOUT_MS      (150U)    /* N_Cr timeout value in ms */
+#define     ISOTP_NAR_TIMEOUT_MS      (900U)    /* N_Ar timeout value in ms */
+#define     ISOTP_NBR_TIMEOUT_MS      (900U)    /* N_Br timeout value in ms */
+#define     ISOTP_NCR_TIMEOUT_MS      (900U)    /* N_Cr timeout value in ms */
 
 /* Padding related values. */
 #define     ISOTP_PAD_REQUIRED        0x00U

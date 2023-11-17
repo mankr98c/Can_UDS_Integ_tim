@@ -27,7 +27,7 @@
 #include "CanTp.h"
 #include "CanTp_Cfg.h"
 #include "ISOUDS_Server_Cfg.h"
-//#include "stm32h7xx_hal_tim.h"
+#include "stm32h7xx_hal_flash.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -37,7 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-//#define TIMER_PERIOD_MS 5000
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -59,6 +59,8 @@ UART_HandleTypeDef huart7;
 
 /* USER CODE BEGIN PV */
 volatile uint32_t milliseconds =0;
+int flag =0;
+volatile uint32_t* mappedAddress = (volatile uint32_t*)0x08007000;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -74,19 +76,58 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs);
+
+void task1()
+{		//	HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_3);
+	if(flag ==0){
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3,GPIO_PIN_SET);
+			flag =1;
+	}
+	else{
+		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3, GPIO_PIN_RESET);
+		flag =0;
+	}
+			ISOTP_Main();
+			ISOUDS_Main_Server();
+//			HAL_Delay(5);
+
+//			can_Tx();
+}
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim2)
 {
 	if (htim2->Instance == TIM2) {
 		milliseconds ++;
 
 	}
+	if(milliseconds %5 ==0)
+		    {
+		  		  task1();
+		  	  }
 }
-void task1()
-{
-			ISOTP_Main();
-			ISOUDS_Main_Server();
-//			can_Tx();
+
+void WriteDataToFlash(uint32_t flashAddress, const uint8_t *data, uint32_t dataSize) {
+    // Unlock the Flash memory for write access
+    HAL_FLASH_Unlock();
+
+    // Erase the specified Flash sectors (you may need to adjust the sector number)
+    FLASH_EraseInitTypeDef eraseInitStruct;
+    eraseInitStruct.TypeErase = FLASH_TYPEERASE_SECTORS;
+    eraseInitStruct.Sector = FLASH_SECTOR_5; // Adjust the sector number
+    eraseInitStruct.NbSectors = 1;
+    eraseInitStruct.VoltageRange = FLASH_VOLTAGE_RANGE_3;
+    uint32_t sectorError = 0;
+    HAL_FLASHEx_Erase(&eraseInitStruct, &sectorError);
+
+    // Write the data to Flash memory
+    for (uint32_t i = 0; i < dataSize; i += 4) {
+        uint32_t dataWord = *(uint32_t*)&data[i];
+        HAL_FLASH_Program(FLASH_TYPEPROGRAM_FLASHWORD, flashAddress + i, dataWord);
+    }
+
+    // Lock the Flash memory
+    HAL_FLASH_Lock();
 }
+
 /* USER CODE END 0 */
 
 /**
@@ -102,14 +143,14 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	HAL_Init();
 
   /* USER CODE BEGIN Init */
   ISOTP_Init();
   ISOUDS_Server_Init();
   FCM_Init();
 
- /* USER CODE END Init */
+  /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
@@ -127,6 +168,18 @@ int main(void)
 
 
   HAL_TIM_Base_Start_IT(&htim2);
+  *mappedAddress = 55;
+  uint8_t data[256];
+
+  for (int i = 0; i < 256; i++) {
+         data[i] = i +1; // Write values into the array (e.g., i * 2)
+     }
+
+  // Flash address where you want to write the data
+  uint32_t flashAddress = *mappedAddress; // Adjust the address based on your Flash layout
+
+  // Write the data to Flash
+  WriteDataToFlash(flashAddress, data, sizeof(data));
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -136,10 +189,6 @@ int main(void)
 
     /* USER CODE END WHILE */
 
-	  if(milliseconds %10 ==0)
-	    {
-	  		  task1();
-	  	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -311,7 +360,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 1000;
+  htim2.Init.Prescaler = 10;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 6400;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -402,7 +451,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_2|GPIO_PIN_3, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6|GPIO_PIN_7, GPIO_PIN_SET);
+
+  /*Configure GPIO pins : PE2 PE3 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PC6 PC7 */
   GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7;

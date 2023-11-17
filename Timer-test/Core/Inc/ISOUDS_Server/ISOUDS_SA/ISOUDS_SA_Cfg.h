@@ -55,7 +55,7 @@ typedef struct
 #define SEED_OFFSET 0x0000E5A1
 
 /* Seed SIZE */
-#define     ISOUDS_SASEED_MAXSIZE           (8)
+#define     ISOUDS_SASEED_MAXSIZE           (3)
 
 /*EEPROM ID to store the security attempt count*/
 #define		ISOUDS_SAATTEMPCNT_ID			(0x0002)

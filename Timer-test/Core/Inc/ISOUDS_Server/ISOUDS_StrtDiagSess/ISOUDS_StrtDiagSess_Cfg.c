@@ -41,7 +41,7 @@ const ISOUDS_SessSubfunMap ISOUDS_SessSubfunMap_Tbl[ISOUDS_StrtDiagSessCfgMaxSub
 ISOUDS_StrtDiagSessCfg_t ISOUDS_StrtDiagSessCfg_Tbl[ISOUDS_StrtDiagSessCfgMaxSubFun] =	{
 																							{
 																								(uint8_t)ISOUDS_DEFAULT,
-																								(DEFAULT_SESS|EXTENDED_SESS ),
+																								(DEFAULT_SESS|EXTENDED_SESS|PROGRAMMING_SESS ),
 																								ISOUDS_FALSE,
 																								1,
 																								{UnlockedL1},
@@ -57,7 +57,7 @@ ISOUDS_StrtDiagSessCfg_t ISOUDS_StrtDiagSessCfg_Tbl[ISOUDS_StrtDiagSessCfgMaxSub
 																							},
 																							{
 																								(uint8_t)ISOUDS_EXTENDED,
-																								(DEFAULT_SESS |EXTENDED_SESS|PROGRAMMING_SESS |SAFETY_SESS ),
+																								(DEFAULT_SESS |EXTENDED_SESS ),
 																								ISOUDS_FALSE,
 																								1,
 																								{UnlockedL1},

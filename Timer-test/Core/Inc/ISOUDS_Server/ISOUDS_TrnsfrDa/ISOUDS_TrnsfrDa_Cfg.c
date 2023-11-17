@@ -112,7 +112,8 @@ uint8_t ISOUDS_TranferDataUploadRequest (uint32_t ReqAddress, uint16_t ReqLength
 	(void) *UploadBuff;
 
 	/* Manual code starts */
-
+	void WriteDataToFlash(uint32_t flashAddress, const uint8_t *data, uint32_t dataSize);
+//	ReqAddress = flashAddress;
 	/* Integrate Flash/NVM module to read the Flash/NVM memory to UploadBuff */
 
 	/* Manual code ends */

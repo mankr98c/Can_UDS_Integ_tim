@@ -45,11 +45,11 @@ const ISOUDS_ReqUpldType ISOUDS_ReqUpldConfTab[ISOUDS_ReqUpldMaxentries] =
 {
 
 	 {
-	   1U,	/* if physical value we rgetting then place it here , otherwise keep it as 0,	 Memory Address Length */ 
+	   1U,	/* if physical value we rgetting then place it here , otherwise keep it as 0,	 Memory Address Length */
 	   1U,  /*if physical value we rgetting then place it here , otherwise keep it as 0, Memory size Length */
 	   0u, /* if physical value we rgetting then place it here , otherwise keep it as 0, , Compression Methods */
 	   0u,/* if physical value we rgetting then place it here , otherwise keep it as 0, , Encryption Methods */
-	 (PROGRAMMING_SESS ),
+	 (PROGRAMMING_SESS | EXTENDED_SESS ),
 	 ISOUDS_TRUE,
 	 1,
 	 {UnlockedL1},

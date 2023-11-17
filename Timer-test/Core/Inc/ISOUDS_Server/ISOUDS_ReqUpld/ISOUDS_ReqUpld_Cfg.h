@@ -41,6 +41,8 @@
 
 #define ISOUDS_UPLOAD_BLKLENFRMTID	(uint8_t)0x20U			/* Block lengthFormatIdentifier */
 #define ISOUDS_UPLOAD_BLOCK_LENGTH	(uint8_t)0x0100U		/* maxNumberOfBlockLength */
+//#define   ISOUDS_UPLOAD_DAFRMTID				(uint8_t)(0x00)
+//#define   ISOUDS_UPLOAD_ADDRLENFRMTID			(uint8_t)(0x11)
 
 /* Address of memory blocks */
 #define     FLASH_UPLOAD_START_ADDR     0x0000C000UL

@@ -91,7 +91,7 @@ uint8_t  ISOUDS_Write_SYMC_PartNoCbk(uint8_t  DestBuff[], uint8_t  len)
 	(void)len;
 
 	/* update Negative Response */
-	RespVal = ISOUDS_GPF;
+	RespVal = ISOUDS_POSRES;
 
 	/* update the retVal variable with respective response if required */
 

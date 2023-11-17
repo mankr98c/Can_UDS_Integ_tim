@@ -1,2 +1,2 @@
-../Core/Src/C_can.c:21:6:can_Tx	2
-../Core/Src/C_can.c:39:6:HAL_FDCAN_RxFifo0Callback	5
+../Core/Src/C_Can.c:21:6:can_Tx	2
+../Core/Src/C_Can.c:39:6:HAL_FDCAN_RxFifo0Callback	5

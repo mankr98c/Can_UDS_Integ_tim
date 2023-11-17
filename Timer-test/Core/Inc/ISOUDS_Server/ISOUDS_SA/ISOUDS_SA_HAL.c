@@ -55,7 +55,7 @@ static uint8_t ISOUDS_AttempCntFrmNVM = INDEX_ZERO;
 void HAL_GenSeedLevel1( uint8_t *SeedGentd)
 {
 	/*User specific implementation*/
-	uint8_t seed[8] = {0x11,0x22,0x33,0x44,0x55,0x66,0x77,0x88};
+	uint8_t seed[3] = {0x11,0x22,0x33};
 	uint8_t *PtrToGenSeed  = NULL_PTR;
 	uint8_t Idx;
 
@@ -93,11 +93,12 @@ uint8_t HAL_GenKeyLevel1(const uint8_t *Key,uint16_t Keylength)
 	uint8_t RetVal = ISOUDS_TRUE;
 	uint8_t Indx;
 	/* seed length in bytes */
-	uint8_t KeyL1[4] = {0x01,0x02,0x03,0x04};
+	uint8_t KeyL1[3] = {0xFA,0xB2,0x32};
+//	Key[3]= {0x01,0x02,0x03};
 
 
 	/* Add security Logic Here */
-
+//Key[] {01,02,03};
 	/* The final remainder is the key */
 
 
@@ -126,7 +127,7 @@ uint8_t HAL_GenKeyLevel1(const uint8_t *Key,uint16_t Keylength)
 void HAL_GenSeedLevel3( uint8_t *SeedGentd)
 {
 	/*User specific implementation*/
-	uint8_t seed[8] = {0, };
+	uint8_t seed[8] = {0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08};
 	uint8_t *PtrToGenSeed  = NULL_PTR;
 	uint8_t Idx;
 #if (SYMC_SECURITY == 1)

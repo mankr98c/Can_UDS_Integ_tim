@@ -20,9 +20,9 @@ extern UART_HandleTypeDef huart7;
 
 void can_Tx()
 {
-	 sprintf(buff,"\r\n CAN tx data started \r\n");
-	 HAL_UART_Transmit(&huart7, (uint8_t *) buff, sizeof(buff), 100);
-	 memset(buff,0,sizeof(buff));
+//	 sprintf(buff,"\r\n CAN tx data started \r\n");
+//	 HAL_UART_Transmit(&huart7, (uint8_t *) buff, sizeof(buff), 100);
+//	 memset(buff,0,sizeof(buff));
 
 	 while (1)
 	 {
@@ -32,7 +32,7 @@ void can_Tx()
 			   Error_Handler();
 			  }
 
-			  HAL_Delay (1000);
+			  HAL_Delay (5);
 	 }
 }
 

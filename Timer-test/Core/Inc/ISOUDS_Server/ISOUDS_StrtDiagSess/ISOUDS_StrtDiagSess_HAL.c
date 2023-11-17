@@ -88,6 +88,8 @@ uint8_t HAL_StrDiagSessDefault_Cbk(void)
 ***************************************************************************************************/
 uint8_t HAL_StrDiagSessExtended_Cbk(void)
 {
+
+
 	uint8_t RespVal;
 
 	RespVal = ISOUDS_POSRES;
@@ -123,38 +125,53 @@ uint8_t HAL_StrDiagSessExtended_Cbk(void)
 ***************************************************************************************************/
 uint8_t HAL_StrDiagSessProgramming_Cbk(void)
 {
-	uint8_t RespVal = ISOUDS_POSRES;
-	static uint8_t l_ReprgFlg = ISOUDS_FALSE;
-	uint8_t data[1];
-
-	#ifdef ISOUDS_SA_SERV 
+//	uint8_t RespVal = ISOUDS_POSRES;
+//	static uint8_t l_ReprgFlg = ISOUDS_FALSE;
+//	uint8_t data[1];
+//
+//	#ifdef ISOUDS_SA_SERV
+//
+//	if (ISOUDS_FALSE ==	l_ReprgFlg)
+//	{
+//#if (SYMC_SECURITY == 1)
+//		SYMC_UpdateSeed();
+//#endif
+//		/*Update EEPROM Flag to indicate ReProgramming request is active*/
+//		data[0] = REPRO_MODE;
+//
+//		//(void)writeEeprom(EEPROM_REPRO_ID, (uint16_t)ISOUDS_ONE, (uint32_t)data);
+//		/* update the flag*/
+//		ISOUDS_ReqECUReset();
+//		RespVal = ISOUDS_RCRRP;
+//		l_ReprgFlg = ISOUDS_TRUE;
+//	}
+//	else
+//	{
+//
+//		RespVal = ISOUDS_RCRRP;
+//
+//	}
+//
+//
+//	/* Session change so lock the security*/
+//	ISOUDS_SAReset();
+//	#endif
 	
-	if (ISOUDS_FALSE ==	l_ReprgFlg)
-	{
-#if (SYMC_SECURITY == 1)
-		SYMC_UpdateSeed();
-#endif
-		/*Update EEPROM Flag to indicate ReProgramming request is active*/
-		data[0] = REPRO_MODE;
+	uint8_t RespVal;
 
-		//(void)writeEeprom(EEPROM_REPRO_ID, (uint16_t)ISOUDS_ONE, (uint32_t)data);
-		/* update the flag*/
-		ISOUDS_ReqECUReset();
-		RespVal = ISOUDS_RCRRP;
-		l_ReprgFlg = ISOUDS_TRUE;
-	}
-	else
-	{
-		
-		RespVal = ISOUDS_RCRRP;
-		
-	}
+		RespVal = ISOUDS_POSRES;
 
-					
-	/* Session change so lock the security*/
-	ISOUDS_SAReset();
+		#if 0
+		uint8_t RespVal;
+	    /*User specific implementation*/
+		RespVal = ISOUDS_POSRES;
+		return(RespVal);
+		#endif
+	#ifdef ISOUDS_SA_SERV
+		/* Session change so lock the security*/
+		ISOUDS_SAReset();
 	#endif
-	return RespVal;
+		return RespVal;
 }
 
 

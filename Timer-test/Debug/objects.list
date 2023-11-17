@@ -52,7 +52,7 @@
 "./Core/Inc/ISOUDS_Server/ISOUDS_WrDaByID/ISOUDS_WrDaByID_HAL.o"
 "./Core/Inc/ISOUDS_Server/ISOUDS_WrtMemByAddr/ISOUDS_WrtMemByAddr_Cfg.o"
 "./Core/Inc/ISOUDS_Server/ISOUDS_WrtMemByAddr/ISOUDS_WrtMemByAddr_HAL.o"
-"./Core/Src/C_can.o"
+"./Core/Src/C_Can.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32h7xx_hal_msp.o"
 "./Core/Src/stm32h7xx_it.o"
